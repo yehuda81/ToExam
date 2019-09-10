@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ToExam5
 {
+    public enum Myenum
+    {
+        None = 1, Shipped = 2, New = 3, Processing = 4, Received = 5
+    }
     class Order
     {
         public int Id { get; set; }
@@ -36,11 +40,6 @@ namespace ToExam5
             OrderValue = orderValue;
             OrderStatus = orderStatus;
         }
-        public enum Myenum
-        {
-            
-            None = 1, Shipped = 2, New = 3, Processing = 4, Received = 5
-        }
-
+  
     }
 }
