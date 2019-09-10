@@ -25,11 +25,10 @@ namespace ToExam5
         {
             InitializeComponent();
             this.DataContext = this;
-            orders.Add(new Order(1, "Yehuda", "Reisner", 38, "yudale81@gmail.com", true, 33.4f, Order.Myenum.New));
-            orders.Add(new Order(2, "Sivan", "Reisner", 35, "Sivanbo55@gmail.com", false, 22.1f, Order.Myenum.Processing));
-            orders.Add(new Order(3, "Lior", "Reisner", 1, "", true, 65.3f, Order.Myenum.Shipped));
+            orders.Add(new Order(1, "Yehuda", "Reisner", 38, "yudale81@gmail.com", true, 33.4f, Myenum.New));
+            orders.Add(new Order(2, "Sivan", "Reisner", 35, "Sivanbo55@gmail.com", false, 22.1f, Myenum.Processing));
+            orders.Add(new Order(3, "Lior", "Reisner", 1, "", true, 65.3f, Myenum.Shipped));
             DG.ItemsSource = orders;
         }
-        
     }
 }
